@@ -1,0 +1,83 @@
+MILESTONES:
+  'Project Initialization and Planning':
+    due_on: '2024-11-07'
+    description: 'Set up repository and define project scope.'
+    tasks:
+      - title: 'Repository Setup'
+        body: 'Initialize the repository with a README.md, .gitignore, and LICENSE file. Add the project description to README.md.'
+        labels: ['setup']
+      - title: 'Project Board Configuration'
+        body: 'Set up the GitHub Project board with columns: Backlog, To Do, In Progress, In Review, Done.'
+        labels: ['setup']
+      - title: 'Define Metadata Schema'
+        body: 'Design and document the schema outlining all structural information and metadata to be stored.'
+        labels: ['planning']
+      - title: 'Tool Selection'
+        body: 'Research and select tools/libraries for parsing, vectorization, and database storage. Document the reasoning behind tool choices.'
+        labels: ['planning']
+
+  'Code Extraction and Metadata Collection':
+    due_on: '2024-11-21'
+    description: 'Extract the Odoo 17 codebase and collect metadata.'
+    tasks:
+      - title: 'Extract Odoo 17 Codebase'
+        body: 'Obtain access to the Odoo 17 codebase, ensuring compliance with licensing terms.'
+        labels: ['coding']
+      - title: 'Develop Parsing Scripts'
+        body: 'Write scripts in Python to parse code files and extract structural information.'
+        labels: ['coding']
+      - title: 'Store Extracted Metadata'
+        body: 'Save the extracted metadata in structured formats such as JSON or YAML.'
+        labels: ['coding']
+      - title: 'Verify Metadata Accuracy'
+        body: 'Perform validation checks to ensure accuracy and completeness of the metadata.'
+        labels: ['testing']
+
+  'Vectorization and Database Implementation':
+    due_on: '2024-12-12'
+    description: 'Implement vectorization and set up the vector database.'
+    tasks:
+      - title: 'Select Vector Database'
+        body: 'Evaluate options and choose a vector database solution based on scalability, performance, and cost.'
+        labels: ['planning']
+      - title: 'Implement Code Embeddings'
+        body: 'Use models like CodeBERT or OpenAI Embeddings to generate vector representations of the code.'
+        labels: ['coding']
+      - title: 'Integrate Data into Database'
+        body: 'Import metadata and embeddings into the vector database and implement data indexing.'
+        labels: ['coding']
+      - title: 'Indexing and Optimization'
+        body: 'Optimize the database indexing for efficient search and retrieval.'
+        labels: ['optimization']
+
+  'Search Functionality and API Development':
+    due_on: '2024-12-26'
+    description: 'Develop search functionality and APIs.'
+    tasks:
+      - title: 'Develop Search API'
+        body: 'Create RESTful APIs using frameworks like FastAPI or Flask for semantic search and retrieval.'
+        labels: ['coding']
+      - title: 'Build User Interface'
+        body: 'Develop a user-friendly interface or CLI for interacting with the database.'
+        labels: ['coding']
+      - title: 'Testing Search Functionality'
+        body: 'Perform unit and integration tests on the search functionality.'
+        labels: ['testing']
+      - title: 'Optimize Search Results'
+        body: 'Fine-tune the search parameters to improve relevance and performance.'
+        labels: ['optimization']
+
+  'Documentation and Final Review':
+    due_on: '2025-01-02'
+    description: 'Document the project and perform a final review.'
+    tasks:
+      - title: 'Write Documentation'
+        body: 'Prepare detailed guides on setup, usage, and maintenance.'
+        labels: ['documentation']
+      - title: 'Code Review and Refactoring'
+        body: 'Review the codebase for improvements and best practices.'
+        labels: ['optimization']
+      - title: 'Future Roadmap Planning'
+        body: 'Outline potential future features and enhancements.'
+        labels: ['planning']
+
